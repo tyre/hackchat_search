@@ -8,5 +8,6 @@
                [:title "search"]
                (include-css "/css/reset.css")]
               [:body
+               [:h1 "Clojure + Noir"]
                [:div#wrapper
                 content]]))

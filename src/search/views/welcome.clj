@@ -7,3 +7,7 @@
 (defpage "/welcome" []
          (common/layout
            [:p "Welcome to search"]))
+
+(defpage "/hello_world" []
+  (common/layout
+    [:p "Fuck you Rails!"]))
