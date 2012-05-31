@@ -1,6 +1,6 @@
 # search
 
-A website written in noir. 
+Noir search as service written in Clojure. Integration with ElasticSearch library (Java)
 
 ## Usage
 
@@ -8,10 +8,3 @@ A website written in noir.
 lein deps
 lein run
 ```
-
-## License
-
-Copyright (C) 2011 FIXME
-
-Distributed under the Eclipse Public License, the same as Clojure.
-
