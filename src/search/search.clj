@@ -1,15 +1,4 @@
-(defn key-search [attr query coll]
-  (filter
-    (fn [obj] (= (get obj attr) query)) 
-  coll)) 
-
-(defn generate-users [num]
-  (flatten
-    (if (> num 0)
-      (list (generate-users (- num 1)) (create-user))
-    )
-  )
-)
+(ns search.search)
 
 (def names ["Dodge" "Dive" "Dip" "Duck" "Dodge"])
 
@@ -21,3 +10,16 @@
     )
   )
 )
+
+(defn generate-users [num]
+  (flatten
+    (if (> num 0)
+      (list (generate-users (- num 1)) (create-user))
+    )
+  )
+)
+
+(defn key-search [attr query coll]
+  (filter
+    (fn [obj] (= (get obj attr) query)) 
+  coll))
